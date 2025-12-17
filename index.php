@@ -37,8 +37,9 @@
 		<script src="js/css3-mediaqueries.js"></script>
 	<![endif]-->
     
+	<?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 <div class="wrap-body">
 	<!--///////////////////////////////////////Top-->
 	<div class="top">
@@ -59,7 +60,7 @@
 	<!--////////////////////////////////////Header-->
 	<header>
 		<div class="zerogrid">
-			<center><div class="logo"><img src="images/logo.png"></div></center>
+			<center><div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png"></div></center>
 		</div>
 	</header>
 	<div class="site-title">
@@ -102,7 +103,7 @@
 						<div class="info">Posted on June 22, 2010 in: <a href="#">Event</a></div>
 					</div>
 					<div class="art-content">
-						<img src="images/6.jpg" />
+						<img src="<?php echo get_template_directory_uri(); ?>/images/6.jpg" />
 						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. labore et dolore magna aliquyam erat, sed diam voluptua.</p>
 					</div>
 					<a class="button button02" href="#">MORE</a>
@@ -113,7 +114,7 @@
 						<div class="info">Posted on June 22, 2010 in: <a href="#">Event</a></div>
 					</div>
 					<div class="art-content">
-						<img src="images/4.jpg" />
+						<img src="<?php echo get_template_directory_uri(); ?>/images/4.jpg" />
 						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. labore et dolore magna aliquyam erat, sed diam voluptua.</p>
 					</div>
 					<a class="button button02" href="#">MORE</a>
@@ -124,7 +125,7 @@
 						<div class="info">Posted on June 22, 2010 in: <a href="#">Event</a></div>
 					</div>
 					<div class="art-content">
-						<img src="images/5.jpg" />
+						<img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" />
 						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. labore et dolore magna aliquyam erat, sed diam voluptua.</p>
 					</div>
 					<a class="button button02" href="#">MORE</a>
@@ -139,7 +140,7 @@
 						<h5>About Us</h5>
 					</div>
 					<div class="wid-content">
-						<img src="images/15.jpg"/>
+						<img src="<?php echo get_template_directory_uri(); ?>/images/15.jpg"/>
 						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
 					</div>
 				</div>
@@ -150,21 +151,21 @@
 					</div>
 					<div class="wid-content">
 						<div class="post">
-							<a href="#"><img src="images/15.jpg"/></a>
+							<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/15.jpg"/></a>
 							<div class="wrapper">
 							  <h5><a href="#">Lorem ipsum dolor</a></h5>
 							   <span>$25 - $26</span>
 							</div>
 						</div>
 						<div class="post">
-							<a href="#"><img src="images/14.jpg"/></a>
+							<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/14.jpg"/></a>
 							<div class="wrapper">
 							  <h5><a href="#">Lorem ipsum dolor</a></h5>
 							  <span>$25 - $26</span>
 							</div>
 						</div>
 						<div class="post">
-							<a href="#"><img src="images/13.jpg"/></a>
+							<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/13.jpg"/></a>
 							<div class="wrapper">
 							  <h5><a href="#">Lorem ipsum dolor</a></h5>
 							   <span>$25 - $26</span>
@@ -194,12 +195,12 @@
 						<h5>Gallery</h5>
 					</div>
 					<div class="wid-content">
-						<a href="#"><img src="images/11.jpg"></a>
-						<a href="#"><img src="images/10.jpg"></a>
-						<a href="#"><img src="images/9.jpg"></a>
-						<a href="#"><img src="images/8.jpg"></a>
-						<a href="#"><img src="images/7.jpg"></a>
-						<a href="#"><img src="images/6.jpg"></a>
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/11.jpg"></a>
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/10.jpg"></a>
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/9.jpg"></a>
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/8.jpg"></a>
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/7.jpg"></a>
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/6.jpg"></a>
 					</div>
 				</div>
 			</div>
@@ -215,7 +216,7 @@
 				<div class="wrap-col">
 					<h4>Customer Testimonials</h4>
 					<div class="row">
-						<img src="images/a-1.jpg">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/a-1.jpg">
 						<h5>Nick Roach</h5>
 						<p>Pellentesque elementum leo et justo dapibus convalli. In justo nibh, congue nec dapibus ac, placerat eget sem. Nunc consequat felis non elit ultricies in varius massa laoreet. Aenean lectus nisl, ellentesque in fermentum sit amet, convallis a lorem condimentum mollis. Aenean lectus nisl, ellentesque in fermentum sit amet.</p>
 					</div>
@@ -253,8 +254,11 @@
 
 
 	<!-- js -->
-	<script src="js/classie.js"></script>
-	<script src="js/demo.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>js/classie.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>js/demo.js"></script>
 	
 </div>
-</body></html>
+
+<?php wp_footer(); ?>
+</body>
+</html>
