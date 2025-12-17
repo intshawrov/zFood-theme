@@ -2,13 +2,13 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="<?php language_attributes(); ?>"> <!--<![endif]-->
 <head>
 
     <!-- Basic Page Needs
   ================================================== -->
-	<meta charset="utf-8">
-	<title>zItalyFood | Free Restaurant Html5 Templates</title>
+	<meta charset="<?php bloginfo('charset'); ?>">
+	
 	<meta name="description" content="Free Responsive Html5 Css3 Templates | zerotheme.com">
 	<meta name="author" content="www.zerotheme.com">
 	
@@ -18,12 +18,13 @@
     
     <!-- CSS
   ================================================== -->
-  	<link rel="stylesheet" href="css/zerogrid.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/slide.css">
-	<link rel="stylesheet" href="css/menu.css">
+  	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/zerogrid.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slide.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/menu.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 	<!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
          <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
