@@ -34,19 +34,23 @@ function zFood_setup(){
 
       // Add HTML5
       add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption') );
+
+      
 }
 
 add_action('after_setup_theme', 'zFood_setup');
 
-     add_action('after_setup_theme', function () {
 
-  $redux_core = get_template_directory() . "/inc/opt/ReduxCore/framework.php";
-  $redux_cfg  = get_template_directory() . "/inc/opt/sample/config.php";
 
-  if ( file_exists($redux_core) ) require_once $redux_core;
-  if ( file_exists($redux_cfg) )  require_once $redux_cfg;
+add_action('after_setup_theme', function () {
 
-  include_once get_template_directory() . "/inc/cmb/init.php";
-  include_once get_template_directory() . "/inc/cmb/config.php";
+      $redux_core = get_template_directory() . "/inc/opt/ReduxCore/framework.php";
+      $redux_cfg  = get_template_directory() . "/inc/opt/sample/config.php";
+
+      if ( file_exists($redux_core) ) require_once $redux_core;
+      if ( file_exists($redux_cfg) )  require_once $redux_cfg;
+
+      include_once get_template_directory() . "/inc/cmb/init.php";
+      include_once get_template_directory() . "/inc/cmb/config.php";
 
 });
