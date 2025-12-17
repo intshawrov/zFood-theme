@@ -72,6 +72,13 @@
 	</div>
     <!--//////////////////////////////////////Menu-->
     <a href="#" class="nav-toggle">Toggle Navigation</a>
+
+    <?php wp_nav_menu(array(
+	'theme_location' => 'main-menu',
+	'menu_class' => 'clearfix'
+    ));
+
+    ?>
     <nav class="cmn-tile-nav">
 		<ul class="clearfix">
 			<li class="colour-1"><a href="index.html">Home</a></li>
