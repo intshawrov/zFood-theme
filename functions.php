@@ -60,3 +60,5 @@ add_action('after_setup_theme', function () {
       include_once get_template_directory() . "/inc/cmb/config.php";
 
 });
+
+add_action('zfood_theme_function')
