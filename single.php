@@ -39,6 +39,7 @@
                         <?php comments_popup_link( 'No Comments' , '1 Comment' , '% Comments' ); ?>
                         <?php endif; ?>
                         <hr>
+                        <?php comments_template(); ?>
 
 				
 			</div>
