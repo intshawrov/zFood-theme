@@ -7,7 +7,7 @@
 	<div class="wrap-container zerogrid">
 		<div class="crumbs">
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="<?php echo site_url(); ?>">Home</a></li>
 				<li><a href="archive.html">Blog</a></li>
 			</ul>
 		</div>

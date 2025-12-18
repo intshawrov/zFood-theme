@@ -7,7 +7,7 @@
 	<div class="wrap-container zerogrid">
 		<div class="crumbs">
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="<?php echo site_url(); ?>">Home</a></li>
 
                         <?php while( have_posts() ) : the_post(); ?>
                         <?php if( !is_front_page() ) : ?>
