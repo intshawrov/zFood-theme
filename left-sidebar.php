@@ -1,6 +1,6 @@
 <?php 
 /* 
-Themplate Name: Left Side Bar
+Template Name: Left Side Bar
 */
 get_header(); ?>
 	
@@ -20,6 +20,10 @@ get_header(); ?>
                         <?php endwhile; ?>
 			</ul>
 		</div>
+            
+            
+            <?php get_sidebar(); ?>
+
 		<div id="main-content" class="col-2-3">
 			<div class="wrap-content">
 
@@ -40,7 +44,7 @@ get_header(); ?>
 			</div>
 		</div>
 		
-		<?php get_sidebar(); ?>
+		
 	</div>
 </section>
 
