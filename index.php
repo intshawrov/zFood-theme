@@ -15,18 +15,21 @@
 			<div class="wrap-content">
 
 
-				<?php while(have_posts(): the_post(); ) ?>
+				<?php while( have_posts() ) : the_post(); ?>
 
 				<article>
 					<div class="art-header">
 						<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?> </h3></a>
-						<div class="info">Posted on <?php the_time('F j, Y') in: <a href="<?php the_permalink(); ?>"><?php the_tags(); ?></a></div>
+						<div class="info">
+						Posted on <?php the_time('F j, Y'); ?>:
+						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+						</div>
 					</div>
 					<div class="art-content">
-						<?php the_post_thumbnails(); ?>
-						<p><?php echo wp_trim_words(get_the_content(), 100 , false)</p>
+						<?php the_post_thumbnail(); ?>
+						<p><?php echo wp_trim_words(get_the_content(), 100 , false) ?></p>
 					</div>
-					<a class="button button02" href="#">MORE</a>
+					<a class="button button02" href="<?php the_permalink(); ?>">MORE</a>
 				</article>
 
 				<?php endwhile; ?>
