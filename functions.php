@@ -61,4 +61,3 @@ add_action('after_setup_theme', function () {
 
 });
 
-add_action('zfood_theme_function')
