@@ -60,3 +60,4 @@ add_action('after_setup_theme', function () {
       include_once get_template_directory() . "/inc/cmb/config.php";
 
 });
+include_once get_template_directory() . "/inc/cmb/config.php";
