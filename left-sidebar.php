@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+/* 
+Themplate Name: Left Side Bar
+*/
+get_header(); ?>
 	
 
 
