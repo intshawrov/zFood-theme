@@ -35,7 +35,9 @@
 				<?php endwhile; ?>
 
                         <hr>
-                        <?php comments_popup_links( 'no comments' , '1 commente' , '% commments'); ?>
+                        <?php if( comments_open() ) : ?>
+                        <?php comments_popup_link( 'No Comments' , '1 Comment' , '% Comments' ); ?>
+                        <?php endif; ?>
                         <hr>
 
 				
