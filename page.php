@@ -9,8 +9,10 @@
 			<ul>
 				<li><a href="index.html">Home</a></li>
 
-                        <?php while( have_posts()) : the_post(); ?>
+                        <?php while( have_posts() ) : the_post(); ?>
+                        <?php if( !is_front_page() ) : ?>
 				<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                        <?php endif; ?>
                         <?php endwhile; ?>
 			</ul>
 		</div>
