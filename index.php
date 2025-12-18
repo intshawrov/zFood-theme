@@ -19,12 +19,12 @@
 
 				<article>
 					<div class="art-header">
-						<a href="#"><h3><?php the_title(); ?> </h3></a>
-						<div class="info">Posted on June 22, 2010 in: <a href="#">Event</a></div>
+						<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?> </h3></a>
+						<div class="info">Posted on <?php the_time('F j, Y') in: <a href="<?php the_permalink(); ?>"><?php the_tags(); ?></a></div>
 					</div>
 					<div class="art-content">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/6.jpg" />
-						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+						<?php the_post_thumbnails(); ?>
+						<p><?php echo wp_trim_words(get_the_content(), 100 , false)</p>
 					</div>
 					<a class="button button02" href="#">MORE</a>
 				</article>
