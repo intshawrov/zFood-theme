@@ -8,7 +8,7 @@
 		<div class="crumbs">
 			<ul>
 				<li><a href="<?php echo site_url(); ?>">Home</a></li>
-				<li><a href="archive.html">Blog</a></li>
+				<li><a href="<?php get_permalink( get_option('get_for_posts')); ?>">Blog</a></li>
 			</ul>
 		</div>
 		<div id="main-content" class="col-2-3">
