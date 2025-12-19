@@ -47,6 +47,19 @@ function zFood_setup(){
 add_action('after_setup_theme', 'zFood_setup');
 
 
+function zFood_sidebar(){
+
+      register_sidebar(array(
+            'name'            => 'Right Sidebar',
+            'description'     => 'Right Sidebar Element',
+            'id'              => 'right-sidebar',
+            
+      ));
+
+}
+
+add_action('widgets_init' , 'zFood_sidebar');
+
 
 add_action('after_setup_theme', function () {
 
