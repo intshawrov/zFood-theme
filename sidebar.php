@@ -15,34 +15,7 @@
 					</div>
 				</div> -->
 				<!---- Start Widget ---->
-				<!-- <div class="widget wid-post">
-					<div class="wid-header">
-						<h5>Latest Posts</h5>
-					</div>
-					<div class="wid-content">
-						<div class="post">
-							<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/15.jpg"/></a>
-							<div class="wrapper">
-							  <h5><a href="#">Lorem ipsum dolor</a></h5>
-							   <span>$25 - $26</span>
-							</div>
-						</div>
-						<div class="post">
-							<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/14.jpg"/></a>
-							<div class="wrapper">
-							  <h5><a href="#">Lorem ipsum dolor</a></h5>
-							  <span>$25 - $26</span>
-							</div>
-						</div>
-						<div class="post">
-							<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/13.jpg"/></a>
-							<div class="wrapper">
-							  <h5><a href="#">Lorem ipsum dolor</a></h5>
-							   <span>$25 - $26</span>
-							</div>
-						</div>
-					</div>
-				</div> -->
+				
 				<!---- Start Widget ---->
 				<!-- <div class="widget wid-tag">
 					<div class="wid-header">

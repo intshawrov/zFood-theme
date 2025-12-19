@@ -55,8 +55,41 @@ add_action('after_setup_theme', 'zFood_setup');
                   ) );
             }
 
-            function widget( $args , $instance){
+            function widget( $one , $two){?>
+                 
+                  <?php echo $one['before_widget']; ?>
 
+
+					 <?php echo $one['before_title']; ?>Latest Posts <?php echo $one['after_title']; ?>
+					</div>
+					<div class="wid-content">
+						<div class="post">
+							<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/15.jpg"/></a>
+							<div class="wrapper">
+							  <h5><a href="#">Lorem ipsum dolor</a></h5>
+							   <span>$25 - $26</span>
+							</div>
+						</div>
+						<div class="post">
+							<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/14.jpg"/></a>
+							<div class="wrapper">
+							  <h5><a href="#">Lorem ipsum dolor</a></h5>
+							  <span>$25 - $26</span>
+							</div>
+						</div>
+						<div class="post">
+							<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/13.jpg"/></a>
+							<div class="wrapper">
+							  <h5><a href="#">Lorem ipsum dolor</a></h5>
+							   <span>$25 - $26</span>
+							</div>
+						</div>
+					</div>
+
+
+
+				<?php echo $one['after_widget']; ?>
+                  <?php
             }
 
             function form( $instance){
