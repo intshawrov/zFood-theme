@@ -53,8 +53,10 @@ function zFood_sidebar(){
             'name'            => 'Right Sidebar',
             'description'     => 'Right Sidebar Element',
             'id'              => 'right-sidebar',
-            'before_widgets'  => '<div class="widget"><div class="wid-header">',
-            'after_widgets'   => '</div></div>',
+            'before_widget'  => '<div class="widget"><div class="wid-header">',
+            'after_widget'   => '</div></div>',
+            'beofre_title'    => '<div class="wid-header"><h5>',
+            
 
       ));
        register_sidebar(array(
