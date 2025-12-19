@@ -41,6 +41,18 @@ function zFood_setup(){
             'main-menu' => 'Main Menu',
       ));
 
+      register_post_type('latest_food', array(
+            'labels' => array(
+                  'name' => 'Latest Food',
+                  'singular_name' => 'Latest Food',
+                  'add_new' => 'Add Latest Food',
+                  'add_new_item' => 'Add New Food Item',
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array('title', 'editor', 'thumbnail', 'custom-fields')
+      ) );
+
       
 }
 
