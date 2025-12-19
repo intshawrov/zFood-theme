@@ -53,8 +53,15 @@ function zFood_sidebar(){
             'name'            => 'Right Sidebar',
             'description'     => 'Right Sidebar Element',
             'id'              => 'right-sidebar',
+
+      ));
+       register_sidebar(array(
+            'name'            => 'Footer Sidebar',
+            'description'     => 'Footer Sidebar Element',
+            'id'              => 'footer-sidebar',
             
       ));
+
 
 }
 

@@ -3,6 +3,7 @@
 
 
 
+			<?php dynamic_sidebar('right-sidebar'); ?>
 				<!---- Start Widget ---->
 				<!-- <div class="widget wid-about">
 					<div class="wid-header">
