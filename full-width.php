@@ -20,7 +20,7 @@ get_header(); ?>
                         <?php endwhile; ?>
 			</ul>
 		</div>
-		<div id="main-content" class="col-2-3">
+		<div id="main-content" class="col-1-1">
 			<div class="wrap-content">
 
 
@@ -40,7 +40,6 @@ get_header(); ?>
 			</div>
 		</div>
 		
-		<?php get_sidebar(); ?>
 	</div>
 </section>
 
