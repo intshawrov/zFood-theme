@@ -56,6 +56,7 @@ function zFood_sidebar(){
             'before_widget'  => '<div class="widget"><div class="wid-header">',
             'after_widget'   => '</div></div>',
             'beofre_title'    => '<div class="wid-header"><h5>',
+            'after-title'     => '</div></h5>'
             
 
       ));
