@@ -1,7 +1,10 @@
 <div id="sidebar" class="col-1-3">
 			<div class="wrap-sidebar">
+
+
+
 				<!---- Start Widget ---->
-				<div class="widget wid-about">
+				<!-- <div class="widget wid-about">
 					<div class="wid-header">
 						<h5>About Us</h5>
 					</div>
@@ -9,9 +12,9 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/images/15.jpg"/>
 						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
 					</div>
-				</div>
+				</div> -->
 				<!---- Start Widget ---->
-				<div class="widget wid-post">
+				<!-- <div class="widget wid-post">
 					<div class="wid-header">
 						<h5>Latest Posts</h5>
 					</div>
@@ -38,9 +41,9 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<!---- Start Widget ---->
-				<div class="widget wid-tag">
+				<!-- <div class="widget wid-tag">
 					<div class="wid-header">
 						<h5>Tags</h5>
 					</div>
@@ -54,9 +57,9 @@
 						<a href="#">travel ,</a>
 						<a href="#">video </a>
 					</div>
-				</div>
+				</div> -->
 				<!---- Start Widget ---->
-				<div class="widget wid-gallery">
+				<!-- <div class="widget wid-gallery">
 					<div class="wid-header">
 						<h5>Gallery</h5>
 					</div>
@@ -68,6 +71,10 @@
 						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/7.jpg"></a>
 						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/6.jpg"></a>
 					</div>
-				</div>
+				</div> -->
+
+
+
+
 			</div>
 		</div>
