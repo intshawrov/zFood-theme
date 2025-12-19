@@ -56,7 +56,7 @@ function zFood_sidebar(){
             'before_widget'  => '<div class="widget"><div class="wid-header">',
             'after_widget'   => '</div></div>',
             'beofre_title'    => '<div class="wid-header"><h5>',
-            'after-title'     => '</div></h5>'
+            'after_title'     => '</div></h5>',
             
 
       ));
@@ -64,6 +64,7 @@ function zFood_sidebar(){
             'name'            => 'Footer Sidebar',
             'description'     => 'Footer Sidebar Element',
             'id'              => 'footer-sidebar',
+            'before_widget'   => ''
             
       ));
 
