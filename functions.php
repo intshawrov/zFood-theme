@@ -49,6 +49,24 @@ add_action('after_setup_theme', 'zFood_setup');
 
 function zFood_sidebar(){
 
+      class new_food_Widget extends WP_Widget {
+
+            function __construct() {
+                  parent::__construct(
+                        'new_food_widget',
+                        __('New Food Widget', 'zFood'),
+                        array( 'description' => __( 'This is a new food widget', 'zFood' ), )
+                  );
+            }
+
+            public function widget( $args, $instance ) {
+            }
+
+            public function form( $instance ) {
+            }
+
+      }
+
       register_sidebar(array(
             'name'            => 'Right Sidebar',
             'description'     => 'Right Sidebar Element',
@@ -67,6 +85,9 @@ function zFood_sidebar(){
             'before_widget'   => ''
             
       ));
+
+
+      register_widget('new_food_Widget');
 
 
 }
