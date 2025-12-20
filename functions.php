@@ -76,6 +76,8 @@ add_action('after_setup_theme', 'zFood_setup');
 					 <?php echo $one['before_title']; ?>Latest Posts <?php echo $one['after_title']; ?>
 					</div>
 					<div class="wid-content">
+
+                              <?php while( have_posts() ) : the_post(); ?>
 						<div class="post">
 							<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/15.jpg"/></a>
 							<div class="wrapper">
@@ -83,13 +85,8 @@ add_action('after_setup_theme', 'zFood_setup');
 							   <span>$25 - $26</span>
 							</div>
 						</div>
-						<div class="post">
-							<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/14.jpg"/></a>
-							<div class="wrapper">
-							  <h5><a href="#">Lorem ipsum dolor</a></h5>
-							  <span>$25 - $26</span>
-							</div>
-						</div>
+
+                                    <?php endwhile; ?>
 						
 					</div>
 
