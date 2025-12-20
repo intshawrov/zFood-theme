@@ -10,23 +10,9 @@
 			'object_types'	=> ['latest_food']
 		]);
 
-
-		$food  -> add_field([
-			'name'			=> 'Food Name',
-			'type'			=> 'text',
-			'id'			=> 'fn'
-		]);
-
-		$food  -> add_field([
-			'name'			=> 'Food Name',
-			'type'			=> 'text',
-			'id'			=> 'fn'
-		]);
-
-		$food  -> add_field([
-			'name'			=> 'Food Name',
-			'type'			=> 'text',
-			'id'			=> 'fn'
+		$food -> add_field([
+			'name'	=> 'Food Name',
+			'type'	=> 'text',
 		]);
 	}
 	add_action('cmb2_init','amader_extra_box');
