@@ -90,13 +90,7 @@ add_action('after_setup_theme', 'zFood_setup');
 							  <span>$25 - $26</span>
 							</div>
 						</div>
-						<div class="post">
-							<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/13.jpg"/></a>
-							<div class="wrapper">
-							  <h5><a href="#">Lorem ipsum dolor</a></h5>
-							   <span>$25 - $26</span>
-							</div>
-						</div>
+						
 					</div>
 
 
