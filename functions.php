@@ -77,9 +77,16 @@ add_action('after_setup_theme', 'zFood_setup');
 					</div>
 					<div class="wid-content">
 
-                              <?php while( have_posts() ) : the_post(); ?>
+                              <?php
+                              WP_Query( array(
+                                    'post_type' => 'latest_food',
+                                    'posts_per_page' => 3,
+                              ) );
+
+
+                              while( have_posts() ) : the_post(); ?>
 						<div class="post">
-							<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/15.jpg"/></a>
+							<a href="#"><img src="<?php echo get_post_meta(get_the_ID(), 'food_image', true); ?>"/></a> 
 							<div class="wrapper">
 							  <h5><a href="#">Lorem ipsum dolor</a></h5>
 							   <span>$25 - $26</span>
