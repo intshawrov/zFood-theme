@@ -89,11 +89,11 @@ add_action('after_setup_theme', 'zFood_setup');
 							<a href="#"><img src="<?php echo get_post_meta(get_the_ID(), 'food_image', true); ?>"/></a> 
 							<div class="wrapper">
 							  <h5><a href="#"><?php echo get_post_meta(get_the_ID(), 'food_name', true); ?></a></h5>
-							   <span><?php echo get_post_meta(get_the_ID(), 'price_to', true); ?></span>
+							   <span><?php echo get_post_meta(get_the_ID(), 'price_from', true); ?><?php echo get_post_meta(get_the_ID(), 'price_to', true); ?></span>
 							</div>
 						</div>
 
-                                    <?php endwhile; ?>
+                                    <?php endwhile; ?> 
 						
 					</div>
 
