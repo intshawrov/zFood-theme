@@ -29,9 +29,9 @@
 		]);
 
 		$food -> add_field([
-			'name'	=> 'Price From',
+			'name'	=> 'Price To',
 			'type'	=> 'text_money',
-			'id'	=> 'price_from',
+			'id'	=> 'price_to',
 		]);
 	}
 	add_action('cmb2_init','amader_extra_box');
