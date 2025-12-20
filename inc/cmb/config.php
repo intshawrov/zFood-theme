@@ -21,6 +21,18 @@
 			'type'	=> 'file',
 			'id'	=> 'food_image'
 		]);
+
+		$food -> add_field([
+			'name'	=> 'Price From',
+			'type'	=> 'text_money',
+			'id'	=> 'price_from',
+		]);
+
+		$food -> add_field([
+			'name'	=> 'Price From',
+			'type'	=> 'text_money',
+			'id'	=> 'price_from',
+		]);
 	}
 	add_action('cmb2_init','amader_extra_box');
 
