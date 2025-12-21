@@ -104,7 +104,14 @@ add_action('after_setup_theme', 'zFood_setup');
                   <?php
             }
 
-            function form( $instance){
+            function form( $instance){?>
+
+                  <p>
+                  <label for="">Title</label>
+                  <input name="" value="" type="text">
+                  </p>
+
+                  <?php
 
             }
       }
@@ -120,11 +127,8 @@ add_action('after_setup_theme', 'zFood_setup');
             }
 
             public function widget($one , $two ){ ?>
-
-                      <?php echo $one['before_widget']; ?>
-
                   
-				
+				 <div class="widget wid-gallery">
 					<div class="wid-header">
 						<h5>Gallery</h5>
 					</div>
@@ -136,11 +140,10 @@ add_action('after_setup_theme', 'zFood_setup');
 						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/7.jpg"></a>
 						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/6.jpg"></a>
 					</div>
-			
+				</div> 
 
 
 
-                        <?php echo $one['after_widget']; ?>
                   <?php
 
             }
