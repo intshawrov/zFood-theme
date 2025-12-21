@@ -121,6 +121,21 @@ add_action('after_setup_theme', 'zFood_setup');
 
             public function widget($one , $two ){
 
+                  
+				 <div class="widget wid-gallery">
+					<div class="wid-header">
+						<h5>Gallery</h5>
+					</div>
+					<div class="wid-content">
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/11.jpg"></a>
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/10.jpg"></a>
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/9.jpg"></a>
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/8.jpg"></a>
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/7.jpg"></a>
+						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/6.jpg"></a>
+					</div>
+				</div> 
+
 
 
             }
