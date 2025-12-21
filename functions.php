@@ -78,12 +78,13 @@ add_action('after_setup_theme', 'zFood_setup');
 					<div class="wid-content">
 
                               <?php
-                              WP_Query( array(
-                                    'post_type' => 'latest_food',
-                                    'posts_per_page' => 3,
-                              ) );
+                                    $args = array(
+                                          'post_type'      => 'latest_food',
+                                          'posts_per_page' => 4,
+                                          );
 
-
+                              $latest_food = new WP_Query( $args );
+                              
                               while( have_posts() ) : the_post(); ?>
 						<div class="post">
 							<a href="#"><img src="<?php echo get_post_meta(get_the_ID(), 'food_image', true); ?>"/></a> 
@@ -93,7 +94,7 @@ add_action('after_setup_theme', 'zFood_setup');
 							</div>
 						</div>
 
-                                    <?php endwhile; ?> 
+                                    <?php endwhile; ?>  
 						
 					</div>
 
