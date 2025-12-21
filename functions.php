@@ -111,6 +111,11 @@ add_action('after_setup_theme', 'zFood_setup');
                   <input name="" value="" type="text">
                   </p>
 
+                  <p>
+                        <label for="">Massage</label>
+                        <textarea name="" id="" class="widefat" ></textarea>
+                  </p>
+
                   <?php
 
             }
@@ -153,6 +158,11 @@ add_action('after_setup_theme', 'zFood_setup');
                   <p>
                   <label for="">Title</label>
                   <input name="" value="" type="text">
+                  </p>
+
+                  <p>
+                        <label for="">Massage</label>
+                        <textarea name="" id="" class="widefat" ></textarea>
                   </p>
 
                   <?php
