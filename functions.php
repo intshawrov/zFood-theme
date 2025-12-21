@@ -84,7 +84,7 @@ add_action('after_setup_theme', 'zFood_setup');
                                           );
 
                               $latest_food = new WP_Query( $args );
-                              
+
                               while( have_posts() ) : the_post(); ?>
 						<div class="post">
 							<a href="#"><img src="<?php echo get_post_meta(get_the_ID(), 'food_image', true); ?>"/></a> 
@@ -134,6 +134,7 @@ function zFood_sidebar(){
 
 
       register_widget('bhalo_khabar');
+      register_widget('food_gallery');
 
 
 }
