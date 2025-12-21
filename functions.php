@@ -59,7 +59,7 @@ function zFood_setup(){
 
 add_action('after_setup_theme', 'zFood_setup');
 
-
+      // Bhalo Khabar Widget
       class bhalo_khabar extends WP_Widget{
 
             function __construct(){
@@ -109,22 +109,24 @@ add_action('after_setup_theme', 'zFood_setup');
             }
       }
 
+      // Food Gallery Widget
+
       class food_gallery extends WP_Widget{
 
-            function __construct(){
+            public function __construct(){
                   parent::__construct('food_gallery', 'Food Gallery Widget', array(
                         'description' => 'This is Food Gallery Widget'
                   ) );
             }
 
-            function widget('' , '' ){
+            public function widget($one , $two ){
 
 
 
             }
 
-            function form ($instance) {
-                  
+            public function form ($instance) {
+
             }
       }
 
