@@ -116,6 +116,16 @@ add_action('after_setup_theme', 'zFood_setup');
                         'description' => 'This is Food Gallery Widget'
                   ) );
             }
+
+            function widget('' , '' ){
+
+
+
+            }
+
+            function form ($instance) {
+                  
+            }
       }
 
 function zFood_sidebar(){
