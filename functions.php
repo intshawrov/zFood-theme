@@ -127,7 +127,7 @@ function zFood_sidebar(){
             'name'            => 'Footer Sidebar',
             'description'     => 'Footer Sidebar Element',
             'id'              => 'footer-sidebar',
-            'before_widget'   => ''
+            
             
       ));
 
