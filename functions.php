@@ -148,7 +148,14 @@ add_action('after_setup_theme', 'zFood_setup');
 
             }
 
-            public function form ($instance) {
+            public function form ($instance) {?>
+
+                  <p>
+                  <label for="">Title</label>
+                  <input name="" value="" type="text">
+                  </p>
+
+                  <?php
 
             }
       }
@@ -172,8 +179,6 @@ function zFood_sidebar(){
             'name'            => 'Footer Sidebar',
             'description'     => 'Footer Sidebar Element',
             'id'              => 'footer-sidebar',
-            
-            
       ));
 
 
