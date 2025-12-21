@@ -124,7 +124,7 @@ add_action('after_setup_theme', 'zFood_setup');
                       <?php echo $one['before_widget']; ?>
 
                   
-				 <div class="widget wid-gallery">
+				
 					<div class="wid-header">
 						<h5>Gallery</h5>
 					</div>
@@ -136,7 +136,7 @@ add_action('after_setup_theme', 'zFood_setup');
 						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/7.jpg"></a>
 						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/6.jpg"></a>
 					</div>
-				</div> 
+			
 
 
 
