@@ -119,7 +119,9 @@ add_action('after_setup_theme', 'zFood_setup');
                   ) );
             }
 
-            public function widget($one , $two ){
+            public function widget($one , $two ){ ?>
+
+                      <?php echo $one['before_widget']; ?>
 
                   
 				 <div class="widget wid-gallery">
@@ -137,6 +139,9 @@ add_action('after_setup_theme', 'zFood_setup');
 				</div> 
 
 
+
+                        <?php echo $one['after_widget']; ?>
+                  <?php
 
             }
 
