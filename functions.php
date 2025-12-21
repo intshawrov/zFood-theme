@@ -109,6 +109,15 @@ add_action('after_setup_theme', 'zFood_setup');
             }
       }
 
+      class food_gallery extends WP_Widget{
+
+            function __construct(){
+                  parent::__construct('food_gallery', 'Food Gallery Widget', array(
+                        'description' => 'This is Food Gallery Widget'
+                  ) );
+            }
+      }
+
 function zFood_sidebar(){
 
      
