@@ -165,6 +165,16 @@ add_action('after_setup_theme', 'zFood_setup');
                         <textarea name="" id="" class="widefat" ></textarea>
                   </p>
 
+                  <p>
+                        <label for="">Select Education</label>
+                        <select name="" id="" class="widefat">
+                              <option value="">--Select--</option>
+                              <option value="">SSC</option>
+                              <option value="">HSC</option>
+                              <option value="">Dakhil</option>
+                              <option value="">Graduation</option>
+                  </p>
+
                   <?php
 
             }
