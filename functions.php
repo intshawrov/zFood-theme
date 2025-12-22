@@ -116,6 +116,16 @@ add_action('after_setup_theme', 'zFood_setup');
                         <textarea name="" id="" class="widefat" ></textarea>
                   </p>
 
+                  <p>
+                        <label for="">Select Food</label>
+                        <select name="" id="" class="widefat">
+                              <option value="">--Select--</option>
+                              <option value="">Pasta</option>
+                              <option value="">Nuddlos</option>
+                              <option value="">Gril-Ruti</option>
+                              <option value="">Kacchi</option>
+                  </p>
+
                   <?php
 
             }
