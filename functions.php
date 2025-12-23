@@ -60,69 +60,79 @@ function zFood_setup(){
 add_action('after_setup_theme', 'zFood_setup');
 
       // Bhalo Khabar Widget
-      class bhalo_khabar extends WP_Widget{
+     class bhalo_khabar extends WP_Widget {
 
-            function __construct(){
-                  parent::__construct('bhalo_khabar', 'Bhalo Khabar Widget', array(
-                        'description' => 'This is Bhalo Khabar Widget'
-                  ) );
-            }
+    function __construct() {
+        parent::__construct(
+            'bhalo_khabar',
+            'Bhalo Khabar Widget',
+            array( 'description' => 'This is Bhalo Khabar Widget' )
+        );
+    }
 
-            function widget( $one , $two){?>
-                 
-                  <?php echo $one['before_widget']; ?>
+    function widget( $args, $instance ) {
 
+        $title = ! empty( $instance['title'] ) ? $instance['title'] : '';
 
-					 <?php echo $one['before_title']; ?>Latest Posts <?php echo $one['after_title']; ?>
-					</div>
-					<div class="wid-content">
+        echo $args['before_widget'];
 
-                              <?php
-                                    $args = array(
-                                          'post_type'      => 'latest_food',
-                                          'posts_per_page' => 4,
-                                          );
+        if ( $title ) {
+            echo $args['before_title'] . esc_html( $title ) . $args['after_title'];
+        }
+        ?>
 
-                              $latest_food = new WP_Query( $args );
+        <div class="wid-content">
+            <?php
+            $query = new WP_Query( array(
+                'post_type'      => 'latest_food',
+                'posts_per_page' => 4,
+            ) );
 
-                              while( have_posts() ) : the_post(); ?>
-						<div class="post">
-							<a href="#"><img src="<?php echo get_post_meta(get_the_ID(), 'food_image', true); ?>"/></a> 
-							<div class="wrapper">
-							  <h5><a href="#"><?php echo get_post_meta(get_the_ID(), 'food_name', true); ?></a></h5>
-							   <span><?php echo get_post_meta(get_the_ID(), 'price_from', true); ?><?php echo get_post_meta(get_the_ID(), 'price_to', true); ?></span>
-							</div>
-						</div>
+            while ( $query->have_posts() ) : $query->the_post(); ?>
+                <div class="post">
+                    <a href="<?php the_permalink(); ?>">
+                        <img src="<?php echo esc_url( get_post_meta( get_the_ID(), 'food_image', true ) ); ?>">
+                    </a>
+                    <div class="wrapper">
+                        <h3><?php echo esc_html( get_post_meta( get_the_ID(), 'food_name', true ) ); ?></h3>
+                        <span>
+                            <?php
+                            echo esc_html( get_post_meta( get_the_ID(), 'price_from', true ) );
+                            echo ' - ';
+                            echo esc_html( get_post_meta( get_the_ID(), 'price_to', true ) );
+                            ?>
+                        </span>
+                    </div>
+                </div>
+            <?php endwhile; wp_reset_postdata(); ?>
+        </div>
 
-                                    <?php endwhile; ?>  
-                                    </div>
-						
-					</div>
+        <?php
+        echo $args['after_widget'];
+    }
 
+    function form( $instance ) {
 
+        $title = ! empty( $instance['title'] ) ? $instance['title'] : '';
+        ?>
+        <p>
+            <label>Title</label>
+            <input
+                class="widefat"
+                type="text"
+                name="<?php echo $this->get_field_name( 'title' ); ?>"
+                value="<?php echo esc_attr( $title ); ?>">
+        </p>
+        <?php
+    }
 
-				<?php echo $one['after_widget']; ?>
-                  <?php
-            }
+    function update( $new_instance, $old_instance ) {
+        $instance = [];
+        $instance['title'] = sanitize_text_field( $new_instance['title'] );
+        return $instance;
+    }
+}
 
-            function form( $instance){?>
-
-                  <p>
-                  <label for="">Title</label>
-                  <input name="" value="" type="text">
-                  </p>
-
-                  <p>
-                        <label for="">Massage</label>
-                        <textarea name="" id="" class="widefat" ></textarea>
-                  </p>
-
-          
-
-                  <?php
-
-            }
-      }
 
       // Food Gallery Widget
 
