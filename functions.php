@@ -144,7 +144,7 @@ add_action('after_setup_theme', 'zFood_setup');
                   ) );
             }
 
-            public function widget($one , $two ){ ?>
+            public function widget( $args, $instance ){ ?>
                   
 				 <div class="widget wid-gallery">
 					<div class="wid-header">
