@@ -171,8 +171,8 @@ add_action('after_setup_theme', 'zFood_setup');
         echo $args['after_widget'];
     }
 
-            public function form ($two) {
-                 $title = $two['title'];
+            public function form ($instance) {
+                 $title = $instance['title'];
                   ?>
 
                   <p>

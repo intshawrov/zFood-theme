@@ -1,7 +1,5 @@
 <?php  
 
-	
-
 	function amader_extra_box(){
 
 		$food = new_cmb2_box([
