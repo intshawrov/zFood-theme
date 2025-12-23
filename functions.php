@@ -144,27 +144,32 @@ add_action('after_setup_theme', 'zFood_setup');
                   ) );
             }
 
-            public function widget( $args, $instance ){ ?>
-                  
-				 <div class="widget wid-gallery">
-					<div class="wid-header">
-						<h5>Gallery</h5>
-					</div>
-					<div class="wid-content">
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/11.jpg"></a>
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/10.jpg"></a>
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/9.jpg"></a>
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/8.jpg"></a>
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/7.jpg"></a>
-						<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/6.jpg"></a>
-					</div>
-				</div> 
+            public function widget( $args, $instance ) {
 
+        $title  = ! empty( $instance['title'] ) ? $instance['title'] : '';
+        $images = ! empty( $instance['images'] ) ? explode( ',', $instance['images'] ) : [];
 
+        echo $args['before_widget'];
 
-                  <?php
+        if ( $title ) {
+            echo $args['before_title'] . esc_html( $title ) . $args['after_title'];
+        }
+        ?>
 
-            }
+        <div class="wid-content wid-gallery">
+            <?php foreach ( $images as $image_id ) : ?>
+                <?php $img = wp_get_attachment_image_url( $image_id, 'thumbnail' ); ?>
+                <?php if ( $img ) : ?>
+                    <a href="#">
+                        <img src="<?php echo esc_url( $img ); ?>">
+                    </a>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </div>
+
+        <?php
+        echo $args['after_widget'];
+    }
 
             public function form ($two) {
                  $title = $two['title'];
