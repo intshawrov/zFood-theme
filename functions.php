@@ -165,7 +165,7 @@ add_action('after_setup_theme', 'zFood_setup');
 
                   <p>
                         <label for="">Massage</label>
-                        <textarea name="" id="" class="widefat" ></textarea>
+                        <textarea name="<?php echo $this-> get_field_name(); ?> " id="" class="widefat" ></textarea>
                   </p>
 
         
