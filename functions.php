@@ -156,16 +156,18 @@ add_action('after_setup_theme', 'zFood_setup');
 
             }
 
-            public function form ($instance) {?>
+            public function form ($two) {
+                 $title = $two['title'];
+                  ?>
 
                   <p>
                   <label for="">Title</label>
-                  <input name="" value="" type="text">
+                  <input name="<?php echo $this-> get_field_name('title'); ?>" value="" type="text">
                   </p>
 
                   <p>
                         <label for="">Massage</label>
-                        <textarea name="<?php echo $this-> get_field_name(); ?> " id="" class="widefat" ></textarea>
+                        <textarea name=" " id="" class="widefat" ></textarea>
                   </p>
 
         
