@@ -231,12 +231,83 @@ add_action('after_setup_theme', function () {
 });
 
 
-      function mir_islam() {
-    
+function fatema_ritu(){ ?>
 
-    return "Mir Islam is a web developer from Bangladesh."; 
+
+<div class="chef">
+					<div class="row">
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="zoom-container">
+									<a href="#">
+										<img src="<?php echo get_template_directory_uri(); ?>/images/chef-1.jpg" />
+									</a>
+								</div>
+								<h3>Chef's Name</h3>
+								<ul class="social t-center">
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="zoom-container">
+									<a href="#">
+										<img src="<?php echo get_template_directory_uri(); ?>/images/chef-2.jpg" />
+									</a>
+								</div>
+								<h3>Chef's Name</h3>
+								<ul class="social t-center">
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="zoom-container">
+									<a href="#">
+										<img src="<?php echo get_template_directory_uri(); ?>/images/chef-3.jpg" />
+									</a>
+								</div>
+								<h3>Chef's Name</h3>
+								<ul class="social t-center">
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-1-4">
+							<div class="wrap-col">
+								<div class="zoom-container">
+									<a href="#">
+										<img src="<?php echo get_template_directory_uri(); ?>/images/chef-4.jpg" />
+									</a>
+								</div>
+								<h3>Chef's Name</h3>
+								<ul class="social t-center">
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+<?php
+    
 }
 
-add_shortcode( 'asdf', 'mir_islam' );
-
+add_shortcode('urmi', 'fatema_ritu');
 
