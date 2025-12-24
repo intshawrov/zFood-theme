@@ -231,7 +231,7 @@ add_action('after_setup_theme', function () {
 });
 
 
-function fatema_ritu(){ ?>
+function our_staff(){ ?>
 
 
 <div class="chef">
@@ -309,5 +309,5 @@ function fatema_ritu(){ ?>
     
 }
 
-add_shortcode('urmi', 'fatema_ritu');
+add_shortcode('staff', 'our_staff');
 
