@@ -50,7 +50,9 @@
 			</ul>
 			<ul class="top-social f-right">
 				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<?php if( isset($redux_opt['fb_link']) && !empty($redux_opt['fb_link'])) :  ?>
+				<li><a href="<?php echo $redux_opt['fb_link']; ?>"><i class="fa fa-facebook"></i></a></li>
+				<?php endif; ?>
 				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
