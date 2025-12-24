@@ -229,9 +229,6 @@ add_action('after_setup_theme', function () {
       include_once get_template_directory() . "/inc/cmb/config.php";
       
 
-        require_once('inc/includes/bootstrap-nav-walker.php');
-        require_once('inc/includes/redux-options.php');
-        require_once('inc/includes/tgmp-activation.php');
 
 });
 
