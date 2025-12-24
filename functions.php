@@ -230,7 +230,3 @@ add_action('after_setup_theme', function () {
 
 });
 
-add_action('after_setup_theme', function(){
-    $redux_core = get_template_directory() . "/inc/opt/ReduxCore/framework.php";
-    $redux_cfg  = get_template_directory() . "/inc/opt/sample/config.php";
-});

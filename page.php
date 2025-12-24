@@ -10,29 +10,25 @@
 				<li><a href="<?php echo site_url(); ?>">Home</a></li>
 
                         <?php while( have_posts() ) : the_post(); ?>
-                        <?php if( !is_front_page() ) : ?>
+                        	<?php if( !is_front_page() ) : ?>
 				<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-                        <?php endif; ?>
+                        	<?php endif; ?>
                         <?php endwhile; ?>
 			</ul>
 		</div>
 		<div id="main-content" class="col-2-3">
 			<div class="wrap-content">
 
-
 				<?php while( have_posts() ) : the_post(); ?>
 
 				<article>
-					
 					<div class="art-content">
 						<?php the_content(); ?>
 					</div>
-					
 				</article>
 
 				<?php endwhile; ?>
 
-				
 			</div>
 		</div>
 		
