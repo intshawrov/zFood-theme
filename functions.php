@@ -227,8 +227,16 @@ add_action('after_setup_theme', function () {
 
       include_once get_template_directory() . "/inc/cmb/init.php";
       include_once get_template_directory() . "/inc/cmb/config.php";
-      
-
 
 });
+
+
+      function mir_islam() {
+    
+
+    return "Mir Islam is a web developer from Bangladesh."; 
+}
+
+add_shortcode( 'asdf', 'mir_islam' );
+
 
