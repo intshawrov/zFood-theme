@@ -318,8 +318,3 @@ function mira_ritu(){ ?>
 }
 add_shortcode('ritu', 'mira_ritu');
 
-function nadim_year(){ 
-      $year = date('Y');
-      return $year;
-}
-add_shortcode('year', 'nadim_year');
