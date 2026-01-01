@@ -207,6 +207,20 @@ function zFood_sidebar(){
             'id'              => 'footer-sidebar',
       ));
 
+      register_sidebar(array(
+            'name'            => 'Left Sidebar',
+            'description'     => 'Left Sidebar Element',
+            'id'              => 'left-sidebar',
+            'before_widget'  => '<div class="widget"><div class="wid-header">',
+            'after_widget'   => '</div></div>',
+            'beofre_title'    => '<div class="wid-header"><h5>',
+            'after_title'     => '</div></h5>',
+            
+
+      ));
+
+
+
 
       register_widget('bhalo_khabar');
       register_widget('food_gallery');
