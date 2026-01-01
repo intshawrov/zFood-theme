@@ -214,9 +214,7 @@ function zFood_sidebar(){
             'before_widget'  => '<div class="widget"><div class="wid-header">',
             'after_widget'   => '</div></div>',
             'beofre_title'    => '<div class="wid-header"><h5>',
-            'after_title'     => '</div></h5>',
-            
-
+            'after_title'     => '</div></h5>', 
       ));
 
 
@@ -325,3 +323,16 @@ function our_staff(){ ?>
 
 add_shortcode('staff', 'our_staff');
 
+
+
+function mira_ritu(){ ?>
+
+<div class="season">
+                    <h3>Seasonal Menu</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis velit nec nulla efficitur luctus. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. </p>
+                    <a href="#" class="btn">View Full Menu</a>
+                </div>
+
+<?php
+}
+add_shortcode('ritu', 'mira_ritu');
