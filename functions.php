@@ -315,8 +315,6 @@ function our_staff(){ ?>
 					</div>
 				</div>
 
-
-
 <?php
     
 }
@@ -327,11 +325,7 @@ add_shortcode('staff', 'our_staff');
 
 function mira_ritu(){ ?>
 
-<div class="season">
-                    <h3>Seasonal Menu</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis velit nec nulla efficitur luctus. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis. </p>
-                    <a href="#" class="btn">View Full Menu</a>
-                </div>
+<h1>Fatema Ritu</h1>
 
 <?php
 }
