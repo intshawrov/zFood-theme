@@ -310,5 +310,6 @@ add_shortcode('staff', 'our_staff');
 
 
 
-
-
+add_shortcode('theme_uri', function() {
+      return get_theme_file_uri();
+} );
