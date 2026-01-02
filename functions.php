@@ -310,11 +310,5 @@ add_shortcode('staff', 'our_staff');
 
 
 
-function mira_ritu(){ ?>
 
-<h1>Fatema Ritu</h1>
-
-<?php
-}
-add_shortcode('ritu', 'mira_ritu');
 
