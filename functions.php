@@ -310,24 +310,3 @@ add_shortcode('staff', 'our_staff');
 
 
 
-add_shortcode('theme_uri', function() {
-      return get_theme_file_uri();
-} );
-
-
-function zFood_scripts(){
-
-      // CSS Files
-      wp_enqueue_style('bootstrap-css', get_theme_file_uri() . '/plugins/bootstrap/css/bootstrap.min.css' , array(), '4.3.1', 'all' );
-      wp_enqueue_style('themify-icons', get_theme_file_uri() . '/plugins/themify-icons/themify-icons.css' , array(), '1.0', 'all' );
-      wp_enqueue_style('animate-css', get_theme_file_uri() . '/plugins/animate/animate.css' , array(), '3.7.0', 'all' );
-      wp_enqueue_style('slick-css', get_theme_file_uri() . '/plugins/slick/slick.css' , array(), '1.8.1', 'all' );
-      wp_enqueue_style('zFood-main-style', get_theme_file_uri() . '/css/style.css' , array(), '1.0', 'all' );
-
-      // JS Files
-      wp_enqueue_script('bootstrap-js', get_theme_file_uri() . '/plugins/bootstrap/js/bootstrap.min.js' , array('jquery'), '4.3.1', true );
-      wp_enqueue_script('slick-js', get_theme_file_uri() . '/plugins/slick/slick.min.js' , array('jquery'), '1.8.1', true );
-      wp_enqueue_script('wow-js', get_theme_file_uri() . '/plugins/wow/wow.min.js' , array('jquery'), '1.0', true );
-      wp_enqueue_script('zFood-main-js', get_theme_file_uri() . '/js/custom.js' , array('jquery'), '1.0', true );
-
-}
